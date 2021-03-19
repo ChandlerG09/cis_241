@@ -267,18 +267,19 @@ awk ' {print $0} fileName
 awk ' {print $NF }' fileName
 ```
 
-**C Programming**
+**C Programming**\n
 
-**Processors** can only read instruction sets
-**Assembly language** was used to access the instruction set
-**Abstraction** used to give a name to a process (for loops ++, while loops)
-**Bell Labs**- Creator of Unix
-**C Language** Created for the sole purpose of running Unix
-**Dennis Ritchie** created C based on BCPL and B
-**Imperative procedural** = C language
-**Procedural**- can make functions/methods
-**Precompiled code** is stored in libraries with .dll .o .so .a or .dylib
-	This saves memory and makes compiling quicker
+**Processors** can only read instruction sets\n
+**Assembly language** was used to access the instruction set\n
+**Abstraction** used to give a name to a process (for loops ++, while loops)\n
+**Bell Labs**- Creator of Unix\n
+**C Language** Created for the sole purpose of running Unix\n
+**Dennis Ritchie** created C based on BCPL and B\n
+**Imperative procedural** = C language\n
+**Procedural**- can make functions/methods\n
+**Precompiled code** is stored in libraries with .dll .o .so .a or .dylib\n
+	This saves memory and makes compiling quicker\n
+
 
 
 
