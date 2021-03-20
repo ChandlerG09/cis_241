@@ -1,6 +1,6 @@
 mkdir $1
 cd $1
-git init
+#git init
 mkdir bin
 mkdir include
 mkdir lib
