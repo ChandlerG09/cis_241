@@ -280,6 +280,22 @@ awk ' {print $NF }' fileName
 **Precompiled code** is stored in libraries with .dll .o .so .a or .dylib\n
 	This saves memory and makes compiling quicker\n
 
+**C Data Types**
+**Integers**
+Check system to see max/min values - /usr/include/limits.h
 
+Char
+short
+int
+long
+long long
+**Floating Points**
+float
+double
+long double
 
-
+**Arrays**
+Arrays are created at compile time
+static = compile time
+sizeof(x) returns size of the Array
+malloc(sizeof(int) *10); creates a big hunk of memory that you can use as an Array
