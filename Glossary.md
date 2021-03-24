@@ -299,3 +299,11 @@ Arrays are created at compile time
 static = compile time
 sizeof(x) returns size of the Array
 malloc(sizeof(int) *10); creates a big hunk of memory that you can use as an Array
+
+**Pointers**
+*int x makes x a pointer address instead of just an int
+Every variable has a: name, address, value, type, scope, lifetime
+
+
+
+
