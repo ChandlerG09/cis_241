@@ -1,0 +1,20 @@
+Wed 03 Feb 2021 03:32:35 PM EST
+
+This is a test with the Vim editor
+Hello World
+
+
+Wed 03 Feb 2021 03:38:22 PM EST
+
+This is a test of me using the Emacs Editor
+Hello yet again World!!
+
+Wed 03 Feb 2021 03:45:18 PM EST
+
+This is the final test of my editors with this one being from Nano
+Hello one last time world!
+
+
+
+VIM URL: https://github.com/ChandlerG09/GlowickiCIS241.git
+
