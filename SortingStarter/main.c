@@ -1,6 +1,7 @@
 #include "file_lib.h"
 #include <stdio.h>
 #include "sorter.h"
+#include "stdio.h"
 /*
  * Read the file from the command-line.
  * Usage:
