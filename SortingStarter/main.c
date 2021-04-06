@@ -1,6 +1,6 @@
 #include "file_lib.h"
 #include <stdio.h>
-	
+#include "sorter.h"
 /*
  * Read the file from the command-line.
  * Usage:
@@ -11,9 +11,13 @@
 int main(int argc, char** argv){
 	// Read the original file.
 	
+	char* fileName=argv[1];
+	char** text=&fileName;
+	load_file(fileName, text);	
 
 	// Sort the file with the function you wrote.
 	
+	sort(argv[1], sizeof(*argv[1]));
 
 	// Write out the new file.
 	
