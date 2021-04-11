@@ -1,7 +1,6 @@
 #include "file_lib.h"
 #include <stdio.h>
 #include "sorter.h"
-#include "stdio.h"
 /*
  * Read the file from the command-line.
  * Usage:
@@ -12,6 +11,9 @@
 int main(int argc, char** argv){
 	// Read the original file.
 	
+	char* contents;
+	size_t size=load_file(argv[1],&contents);
+	printf("%lu bytes read from the file.",size);	
 	char* fileName=argv[1];
 	char** text=&fileName;
 	load_file(fileName, text);	
