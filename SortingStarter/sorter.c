@@ -9,41 +9,58 @@ void sort(char** contents, int size){
 	
 	//Designate memory for the array
 	char** arr = malloc(sizeof(char*)*size);
-	
+	int j;	
 	int i=0;
 	int numlines=0;
-
-	//Putting the file into an array
+	char* key;	
 	char* tok = strtok(*contents, "\n:");
+	
+	//Putting the file into an array
 	while( tok != NULL ){
+		
 		arr[numlines]=tok;
-		
-		//Testing to make sure the array is created correctly
-		//	printf("%s\n", arr[numlines]);
-		
 		tok = strtok(NULL, "\n:");
 		++numlines;
 	}
+	
+	//Making a char array that can hold the contents of the read file
+	char array[20*numlines];
 
-	printf("\n%d lines read from the file",numlines);
+	//Sort using insertion sort
+	for (i=1; i<numlines; ++i) {
+		key = arr[i];
+		j = i-1;
 
-/**	for( int i=numlines; i>0; --i){
-		int tempi=i;	
-		while (i > 0) {
-			while (arr[i]  < arr[tempi-1]) {
-				if(tempi>0){
-					char* temp = arr[tempi-1];
-					arr[tempi-1] = arr[tempi];
-					arr[tempi] = temp;
-					--tempi;
-				}
-			}	
-			--i;
-			}
+		while (j >= 0 && arr[j] > key) {
+			arr[j+1] = arr[j];
+			--j;
 		}
-*/	contents = malloc(sizeof(char*)*size);
-	for(int i=0; i<numlines; ++i) {
-		contents = arr;
+		arr[j+1] = key;
 	}
+		
+	//Add sorted array to a new array
+	for (int i=0; i<numlines; ++i) {
+		strcat(array, arr[i]);
+		strcat(array, "\n");
+	}
+	
+/* 	TEST CODE
+ 	//are the words moving (No)
+	for(int i=0; i<numlines; ++i) {
+		printf("%s",arr[i]);
+		printf("\n");
+	}
+	
+	//make sure words are being put in new array (Yes)
+	printf("%s",array);
+*/
+
+	printf("%d lines read from the file\n",numlines);
+		
+	//set the sorted array to the contents found in main.
+	*contents = array;
+
+	//free memory
+	free(arr);
 }
 		

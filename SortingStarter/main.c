@@ -28,7 +28,7 @@ int main(int argc, char** argv){
 	sort(&content , size);
 	
 	//print the 5th word??
-	printf("\n%s", content);
+	//printf("\n%s", content);
 
 	// Write out the new file.
 	save_file(argv[2], content , size);	
